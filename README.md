@@ -2,39 +2,43 @@
 
 This project contains end-to-end tests for [saucedemo.com](https://www.saucedemo.com/) using [Cypress](https://www.cypress.io/).
 
-## Project Structure
+## Getting Started
 
-- `cypress/e2e/` - Test specifications (e.g., [login.cy.js](cypress/e2e/login.cy.js))
-- `cypress/fixtures/` - Test data and fixtures (e.g., [example.json](cypress/fixtures/example.json))
-- `cypress/support/` - Custom commands and global configuration ([commands.js](cypress/support/commands.js), [e2e.js](cypress/support/e2e.js))
-- `cypress.config.js` - Cypress configuration file
-- `package.json` - Project dependencies
+1. **Clone the repository:**
 
-## Setup
+    ```sh
+    git clone git remote add origin https://github.com/Muyundo/saucedemoAutomation.git
+    cd saucedemo
+    ```
 
-1. Install dependencies:
+2. **Install dependencies:**
 
     ```sh
     npm install
     ```
 
-2. Open Cypress Test Runner:
+3. **Run the tests:**
 
-    ```sh
-    npx cypress open
-    ```
+    - Open Cypress Test Runner:
 
-   Or run tests in headless mode:
+        ```sh
+        npx cypress open
+        ```
 
-    ```sh
-    npx cypress run
-    ```
+    - Or run tests in headless mode:
+
+        ```sh
+        npx cypress run
+        ```
+
+## Project Structure
+
+- `cypress/e2e/` - Test specifications (e.g., `login.cy.js`)
+- `cypress/fixtures/` - Test data and fixtures
+- `cypress/support/` - Custom commands and global configuration
+- `cypress.config.js` - Cypress configuration file
+- `package.json` - Project dependencies
 
 ## Example Test
 
-The [login.cy.js](cypress/e2e/login.cy.js) file contains tests for logging in with valid and invalid credentials.
-
-## Resources
-
-- [Cypress Documentation](https://docs.cypress.io/)
--
+The `login.cy.js` file contains tests for logging in with valid and invalid
